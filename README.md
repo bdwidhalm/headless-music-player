@@ -7,6 +7,8 @@ Need to add a cron entry to start the python script after start-up or reboot.  T
 
 
 ## Hardware
+Raspberry Pi
+=======
 The code runs on a raspberry pi, uses 6 buttons for playback, pause, skip/back and playlist selection.  These need to be wired up to specific pins on the pi (see code).  Another button is set up to turn the pi on and off, LEDs connected to indication playlist selection and status.  Used a 16x2 LCD screen to display the current song and artist.  
 
 
