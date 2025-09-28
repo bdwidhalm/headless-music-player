@@ -1,6 +1,10 @@
 # headless-music-player
 
-This is a simple script created to run on a raspberry pi to play music without a monitor.  
+This is a simple script created to run on a raspberry pi to play music without a monitor.  The Python script is multi-threaded, each thread handles a different function:  
+- Main thread setups up the script and spawns off other threads then waits for all threads to finish their work
+- Music thread handles playing the audio files
+- Display thread handles changed to the LCD display screen
+- Control thread listens for inputs from the buttons to play/pause or change playlists
 
 ## Setup
 Need to add a cron entry to start the python script after start-up or reboot.  The script runs in the background waiting for a button to be pressed.  
